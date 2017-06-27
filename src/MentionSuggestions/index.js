@@ -218,7 +218,7 @@ export default class MentionSuggestions extends Component {
     if (!mention) {
       return;
     }
-    const updated_mention;
+    let updated_mention;
     if (this.props.onAddMention) {
       updated_mention = this.props.onAddMention(mention);
     }
